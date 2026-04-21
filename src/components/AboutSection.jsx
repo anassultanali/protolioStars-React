@@ -1,5 +1,6 @@
 import { Briefcase, Code, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import CV from "../../public/cv.pdf";
 
 export const AboutSection = () => {
   const { t } = useTranslation();
@@ -29,7 +30,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href=""
+                href={CV} download 
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 {t("about.CVbtn")}
