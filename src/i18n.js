@@ -201,7 +201,7 @@ i18n.use(initReactI18next).init({
     },
   },
   lng: "ar",
-  fallbackLng: "an",
+  fallbackLng: "ar",
   interpolation: { escspeValue: false },
 });
 

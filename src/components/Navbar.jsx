@@ -54,7 +54,7 @@ export const Navbar = () => {
         <div className="flex justify-between">
           <ThemeToggle />
           <div className="glass-radio-group">
-            <input defaultChecked={false} type="radio" name="plan" id="glass-gold" />
+            <input defaultChecked={true} type="radio" name="plan" id="glass-gold" />
             <label
               onClick={() => changeLanguage(languages[1].code)}
               htmlFor="glass-gold"
@@ -62,7 +62,7 @@ export const Navbar = () => {
               {t("navbar.langAR")}
             </label>
 
-            <input defaultChecked={true} type="radio" name="plan" id="glass-platinum" />
+            <input defaultChecked={false} type="radio" name="plan" id="glass-platinum" />
             <label
               onClick={() => changeLanguage(languages[0].code)}
               htmlFor="glass-platinum"
