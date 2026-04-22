@@ -33,19 +33,18 @@ export const ThemeToggle = () => {
       onClick={toggleTheme}
       className={cn(
         "  top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-        "focus:outlin-hidden cursor-pointer"
+        "focus:outlin-hidden cursor-pointer",
       )}
     >
-      {isDarkMode ? (
-        <Sun className="h-6 w-6 text-yellow-300" />
-      ) : (
+      {console.log(isDarkMode)}
+      {!isDarkMode ? (
         <Moon className="h-6 w-6 text-blue-900" />
+      ) : (
+        <Sun className="h-6 w-6 text-yellow-300" />
       )}
     </button>
   );
 };
-
-
 
 // <label class="theme-switch">
 //   <input type="checkbox" class="theme-switch__checkbox">
@@ -70,7 +69,8 @@ export const ThemeToggle = () => {
 
 // ----------------------------------------------
 
-{/* <label class="switch">
+{
+  /* <label class="switch">
   <input checked="true" id="checkbox" type="checkbox" />
   <span class="slider">
     <div class="star star_1"></div>
@@ -84,5 +84,5 @@ export const ThemeToggle = () => {
       ></path>
     </svg>
   </span>
-</label> */}
-
+</label> */
+}
