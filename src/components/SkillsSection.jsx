@@ -14,12 +14,14 @@ export const SkillsSection = () => {
     { name: "React", level: 90, category: "frontend" },
     // { name: "TypeScript", level: 85, category: "frontend" },
     { name: "Tailwind CSS", level: 90, category: "frontend" },
+    { name: "Bootstrap", level: 80, category: "frontend" },
     // { name: "Next.js", level: 80, category: "frontend" },
   
     // Backend
-    { name: "Node.js", level: 60, category: "backend" },
-    // { name: "Express", level: 75, category: "backend" },
-    // { name: "MongoDB", level: 70, category: "backend" },
+    { name: "Node.js", level: 80, category: "backend" },
+    { name: "Express", level: 75, category: "backend" },
+    { name: "MongoDB", level: 70, category: "backend" },
+    { name: "NestJS", level: 85, category: "backend" },
     // { name: "PostgreSQL", level: 65, category: "backend" },
     // { name: "GraphQL", level: 60, category: "backend" },
     { name: "PHP", level: 90, category: "backend" },
@@ -35,17 +37,13 @@ export const SkillsSection = () => {
   
   const categories = [t("skills.all"), "frontend", "backend", t("skills.tools")];
   
-  const [activeCategory, setActiveCategory] = useState(t("skills.all"));
+  const [activeCategory, setActiveCategory] = useState(categories[2]);
 
   const filteredSkills = skills.filter(
     (skill) => activeCategory === t("skills.all") || skill.category === activeCategory
   );
 
-  useEffect(() => {
-    setActiveCategory(t("skills.all"));
-
-  }, [categories]);
-
+  
   return (
     <section id="skills" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
