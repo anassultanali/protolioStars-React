@@ -63,8 +63,8 @@ i18n.use(initReactI18next).init({
             sub: "A multi-page introductory website using Bootstrap."
           },
           project2: {
-            title: "Interno Furniture",
-            sub: "A beautiful landing page app using  Tailwind."
+            title: "ZIZO Store",
+            sub: "A powerful e-commerce platform built with NextJS and MongoDB, featuring seamless image management with ImageKit and react native for the mobile app."
           },
           project3: {
             title: "Movies Recommendation",
@@ -160,8 +160,8 @@ i18n.use(initReactI18next).init({
             sub: "موقع تعريفي متعدد الصفحات باستخدام  Bootstrap."
           },
           project2: {
-            title: "Interno للأثاث",
-            sub: "صفحة تعريفية باستخدام Tailwind"
+            title: "متجر زيزو",
+            sub: "منصة تجارة إلكترونية قوية مبنية باستخدام NextJS و MongoDB، تتميز بإدارة للصور باستخدام ImageKit و react native لتطبيق الهاتف المحمول."
           },
           project3: {
             title: "توصيات الأفلام",

@@ -20,9 +20,9 @@ export const ProjectsSection = () => {
       title: t("projects.project2.title"),
       description: t("projects.project2.sub"),
       image: "/projects/project2.png",
-      tags: ["Tailwind"],
-      demoUrl: "https://anassultanali.github.io/Landing_page_tailwind/",
-      githubUrl: "https://github.com/anassultanali/Landing_page_tailwind",
+      tags: ['NextJS' ,'MongoDB',  'React Native' ],
+      demoUrl: "https://zizo-store-nextjs.vercel.app/",
+      githubUrl: "",
     },
     {
       id: 3,
@@ -33,6 +33,7 @@ export const ProjectsSection = () => {
       demoUrl: "https://moviesrecommendation1.netlify.app/",
       githubUrl: "https://github.com/anassultanali/React-Movies-Recommendation",
     },
+    
   ];
 
   return (
@@ -47,35 +48,38 @@ export const ProjectsSection = () => {
           {t("projects.sub")}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" dir="ltr">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs relative card-hover"
+              
             >
               <div className="h-48 overflow-hidden">
+              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+              </a>
               </div>
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span key={i} className="px-2 py-1 text-[0.7rem] lg:text-xs font-medium border bg-primary/20 rounded-full bg-secondary text-secondary-foreground">
                       {tag}
                     </span>
                   ))}
                 </div>
 
                 <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-8">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
+                <div className="flex justify-between mt-3 absolute bottom-4  lift-6">
+                  <div className="flex text-left space-x-3">
                     <a
                       href={project.demoUrl}
                       target="_blank"
@@ -83,13 +87,15 @@ export const ProjectsSection = () => {
                     >
                       <ExternalLink size={20} />
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
+                    {project.githubUrl != "" && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
                       <Github size={20} />
                     </a>
+                    )}
                   </div>
                 </div>
               </div>
