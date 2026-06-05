@@ -49,7 +49,6 @@ export const Navbar = () => {
       )}
       dir="ltr"
     >
-
       <div className="container flex items-center justify-between">
       {/* My lang switcher */}
         <div className="flex justify-between">
