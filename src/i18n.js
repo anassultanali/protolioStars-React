@@ -67,8 +67,8 @@ i18n.use(initReactI18next).init({
             sub: "A powerful e-commerce platform built with NextJS and MongoDB, featuring seamless image management with ImageKit and react native for the mobile app."
           },
           project3: {
-            title: "Movies Recommendation",
-            sub: "A Movies Recommendation page using React and Tailwind."
+            title: "Simple Landing Page",
+            sub: "A Simple landing page with multiple sections and smooth scrolling navigation."
           },
           btn: "Check My Github"
         },
