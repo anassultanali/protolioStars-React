@@ -164,8 +164,8 @@ i18n.use(initReactI18next).init({
             sub: "منصة تجارة إلكترونية قوية مبنية باستخدام NextJS و MongoDB، تتميز بإدارة للصور باستخدام ImageKit و react native لتطبيق الهاتف المحمول."
           },
           project3: {
-            title: "توصيات الأفلام",
-            sub: "صفحة توصيات أفلام باستخدام React و Tailwind."
+            title: "صفحة تعريفية",
+            sub: "صفحة تعريفية بسيطة تحتوي على اقسام متعددة "
           },
           btn: "راجع حسابي على Github"
         },

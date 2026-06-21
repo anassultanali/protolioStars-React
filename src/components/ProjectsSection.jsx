@@ -29,9 +29,9 @@ export const ProjectsSection = () => {
       title: t("projects.project3.title"),
       description:t("projects.project3.sub"),
       image: "/projects/project3.png",
-      tags: ["React", "Tailwind"],
-      demoUrl: "https://moviesrecommendation1.netlify.app/",
-      githubUrl: "https://github.com/anassultanali/React-Movies-Recommendation",
+      tags: ["Tailwind"],
+      demoUrl: "https://tranquil-otter-9bd78e.netlify.app/",
+      githubUrl: "",
     },
     
   ];
